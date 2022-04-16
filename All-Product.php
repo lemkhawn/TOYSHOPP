@@ -155,7 +155,7 @@
                 <div class="product allpro">
                     <?PHP 
                         include("connect.php");
-                        $sql = "SELECT * FROM clothing";
+                        $sql = "SELECT * FROM toy";
                         $result = mysqli_query($connect, $sql);
 
                         //tìm và trả về kết quả dưới dạng 1 mảng
