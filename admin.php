@@ -11,15 +11,15 @@
         <form action="" method="post" enctype="multipart/form-data">
             <h2>Add Product</h2>
    
-                        Product Name<input type="text" name="clothing_name">
+                        Product Name<input type="text" name="toy_name">
          
-                        Price's Product<input type="text" name="clothing_price">
+                        Price's Product<input type="text" name="toy_price">
          
-                        Product image<input type="file" name="clothing_image">
+                        Product image<input type="file" name="toy_image">
          
-                        Product Des<textarea name="clothing_des" id="" rows="10"></textarea>
+                        Product Des<textarea name="toy_des" id="" rows="10"></textarea>
         
-                        <input type="submit" name="insert_clothing" value="Add Product">
+                        <input type="submit" name="insert_toy" value="Add Product">
   
         </form>
     </div>

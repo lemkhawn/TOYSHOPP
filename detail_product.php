@@ -93,22 +93,22 @@ require_once("connect.php");
   <div class="container">  
     <?php 
       $id=$_GET["id"];
-      $sql="SELECT * FROM clothing WHERE clothing_id={$id} ";
+      $sql="SELECT * FROM clothing WHERE toy_id={$id} ";
       $result= mysqli_query($connect,$sql);
       while ($row=mysqli_fetch_assoc($result)) {
       ?>
         <div class="img_products" >
-            <img src="img/<?php echo $row['clothing_image']?>" >
+            <img src="img/<?php echo $row['toy_image']?>" >
           </div>
           <div class="details">
-            <h2 class="name_product"><?php echo $row['clothing_name'] ?></h2>
-            <p class="prices"> Price: <?php echo number_format($row['clothing_price'])." VND"; ?></p>   
+            <h2 class="name_product"><?php echo $row['toy_name'] ?></h2>
+            <p class="prices"> Price: <?php echo number_format($row['toy_price'])." $"; ?></p>   
             <br>
             <div class="line"></div>
             <h3>
               Infor Product:
             </h3>               
-            <p><?php echo $row["clothing_description"]; ?></p>
+            <p><?php echo $row["toy_description"]; ?></p>
             <br>
             <div class="line"></div>
             <br>
@@ -150,17 +150,17 @@ require_once("connect.php");
 
                     while($row =mysqli_fetch_array($result)){
                         // lấy dữ liệu từ các dòng truy vấn được trong CSDL ra
-                        $clothing_id = $row['clothing_id'];
-                        $clothing_name = $row['clothing_name'];
-                        $clothing_price =$row['clothing_price'];
-                        $clothing_image =$row['clothing_image'];
-                        $clothing_description = $row['clothing_description'];
+                        $toy_id = $row['toy_id'];
+                        $toy_name = $row['toy_name'];
+                        $toy_price =$row['toy_price'];
+                        $toy_image =$row['toy_image'];
+                        $toy_description = $row['toy_description'];
 
                         echo" <div class='single_clothing'>
-                            <a href='detail_product.php?id=$clothing_id'>
-                            <img src='img/$clothing_image' />
-                            <h4> $clothing_name </h4>
-                            <p> Price : $clothing_price VND </p>
+                            <a href='detail_product.php?id=$toy_id'>
+                            <img src='img/$toy_image' />
+                            <h4> $toy_name </h4>
+                            <p> Price : $toy_price $ </p>
                             </a>
                             </div>
                             ";

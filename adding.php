@@ -103,31 +103,31 @@ textarea,
                 <tr>
                     <td>Product Name</td>
                     <td>
-                        <input type="text" name="clothing_name">
+                        <input type="text" name="toy_name">
                     </td>
                 </tr>
                 <tr>
                     <td>Price's Product</td>
                     <td>
-                        <input type="text" name="clothing_price">
+                        <input type="text" name="toy_price">
                     </td>
                 </tr>
                 <tr>
                     <td>Product image</td>
                     <td>
-                        <input type="file" name="clothing_image">
+                        <input type="file" name="toy_image">
                     </td>
                 </tr>
                 <tr>
                     <td>Product Des</td>
                     <td>
-                        <textarea name="clothing_des" id="" rows="10"></textarea>
+                        <textarea name="toy_des" id="" rows="10"></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <input type="submit" name="insert_clothing" value="Add Product">
+                        <input type="submit" name="insert_toy" value="Add Product">
                     </td>
                 </tr>
             </table>
@@ -144,27 +144,27 @@ textarea,
 
         $connect =  mysqli_connect($servername, $username, $password, $database);
 
-        if(isset($_POST['insert_clothing'])) {
-           $clothing_name = $_POST['clothing_name'];
-           $clothing_price = $_POST['clothing_price'];
-           $clothing_description = $_POST['clothing_des'];
+        if(isset($_POST['insert_toy'])) {
+           $toy_name = $_POST['toy_name'];
+           $toy_price = $_POST['toy_price'];
+           $toy_description = $_POST['toy_des'];
 
-           $clothing_image = $_FILES['clothing_image']['name'];
-           $clothing_image_tmp = $_FILES['clothing_image']['tmp_name'];
+           $toy_image = $_FILES['toy_image']['name'];
+           $toy_image_tmp = $_FILES['toy_image']['tmp_name'];
 
-            move_uploaded_file($clothing_image_tmp, "img/$clothing_image");
+            move_uploaded_file($toy_image_tmp, "img/$toy_image");
 
-            $sql ="INSERT INTO clothing(clothing_id,
-                                        clothing_name, 
-                                        clothing_price, 
-                                        clothing_image, 
-                                        clothing_description) 
+            $sql ="INSERT INTO clothing(toy_id,
+                                        toy_name, 
+                                        toy_price, 
+                                        toy_image, 
+                                        toy_description) 
                                 VALUES
                                         (NULL,
-                                        '$clothing_name',
-                                        '$clothing_price',
-                                        '$clothing_image',
-                                        '$clothing_description') 
+                                        '$toy_name',
+                                        '$toy_price',
+                                        '$toy_image',
+                                        '$toy_description') 
                         ";
 
             $insert_pro = mysqli_query($connect, $sql);

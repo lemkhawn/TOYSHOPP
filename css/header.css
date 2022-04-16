@@ -46,7 +46,7 @@ header {
 }
 .socialmedia a:hover {
     background: -webkit-linear-gradient(#86a8e7, #91eae4);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
 }
 .login-register {
