@@ -101,17 +101,17 @@
 
                 while($row =mysqli_fetch_array($result)){
                     // lấy dữ liệu từ các dòng truy vấn được trong CSDL ra
-                    $toy_id = $row['toy_id'];
-                    $toy_name = $row['toy_name'];
-                    $toy_price =$row['toy_price'];
-                    $toy_image =$row['toy_image'];
-                    $toy_description = $row['toy_description'];
+                    $clothing_id = $row['clothing_id'];
+                    $clothing_name = $row['clothing_name'];
+                    $clothing_price =$row['clothing_price'];
+                    $clothing_image =$row['clothing_image'];
+                    $clothing_description = $row['clothing_description'];
 
                     echo" <div class='single_toy'>
-                        <a href='detail_product.php?id=$toy_id'>
-                        <img src='img/$toy_image' />
-                        <h4> $toy_name </h4>
-                        <p> Price : $toy_price $ </p>
+                        <a href='detail_product.php?id=$clothing_id'>
+                        <img src='img/$clothing_image' />
+                        <h4> $clothing_name </h4>
+                        <p> Price : $clothing_price $ </p>
                         </a>
                         </div>
                         ";
@@ -131,20 +131,20 @@
 
                     while($row =mysqli_fetch_array($result)){
                         // lấy dữ liệu từ các dòng truy vấn được trong CSDL ra
-                        $toy_id = $row['toy_id'];
-                        $toy_name = $row['toy_name'];
-                        $toy_price =$row['toy_price'];
-                        $toy_image =$row['toy_image'];
-                        $toy_description = $row['toy_description'];
+                        $clothing_id = $row['clothing_id'];
+                    $clothing_name = $row['clothing_name'];
+                    $clothing_price =$row['clothing_price'];
+                    $clothing_image =$row['clothing_image'];
+                    $clothing_description = $row['clothing_description'];
 
-                        echo" <div class='single_toy'>
-                            <a href='detail_product.php?id=$toy_id'>
-                            <img src='img/$toy_image' />
-                            <h4> $toy_name </h4>
-                            <p> Price : $toy_price $ </p>
-                            </a>
-                            </div>
-                            ";
+                    echo" <div class='single_toy'>
+                        <a href='detail_product.php?id=$clothing_id'>
+                        <img src='img/$clothing_image' />
+                        <h4> $clothing_name </h4>
+                        <p> Price : $clothing_price $ </p>
+                        </a>
+                        </div>
+                        ";
                         }     
                         // remove clothing_des and button cart
                 ?>
