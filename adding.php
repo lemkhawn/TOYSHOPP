@@ -136,10 +136,10 @@ textarea,
     </div>
     <?php
 
-        $servername = "localhost";
-        $username = "root" ;
-        $password = "";
-        $database = "toyshop";
+        $servername = "3.24.169.26";
+        $username = "khanhnl" ;
+        $password = "123@123a";
+        $database = "toyshopp";
                 //khai báo biến để kết nói vs csdl 
 
         $connect =  mysqli_connect($servername, $username, $password, $database);
@@ -154,7 +154,7 @@ textarea,
 
             move_uploaded_file($toy_image_tmp, "img/$toy_image");
 
-            $sql ="INSERT INTO clothing(toy_id,
+            $sql ="INSERT INTO toy(toy_id,
                                         toy_name, 
                                         toy_price, 
                                         toy_image, 
