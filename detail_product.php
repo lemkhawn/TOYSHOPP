@@ -93,7 +93,7 @@ require_once("connect.php");
   <div class="container">  
     <?php 
       $id=$_GET["id"];
-      $sql="SELECT * FROM clothing WHERE toy_id={$id} ";
+      $sql="SELECT * FROM toy WHERE toy_id={$id} ";
       $result= mysqli_query($connect,$sql);
       while ($row=mysqli_fetch_assoc($result)) {
       ?>
@@ -142,7 +142,7 @@ require_once("connect.php");
         <div class="ramdom sales-up">
             <?PHP 
                     include("connect.php");
-                    $sql = "SELECT * FROM clothing ORDER BY RAND ( ) LIMIT 4 ";
+                    $sql = "SELECT * FROM toy ORDER BY RAND ( ) LIMIT 4 ";
                     $result = mysqli_query($connect, $sql);
 
                     //tìm và trả về kết quả dưới dạng 1 mảng
@@ -156,7 +156,7 @@ require_once("connect.php");
                         $toy_image =$row['toy_image'];
                         $toy_description = $row['toy_description'];
 
-                        echo" <div class='single_clothing'>
+                        echo" <div class='single_toy'>
                             <a href='detail_product.php?id=$toy_id'>
                             <img src='img/$toy_image' />
                             <h4> $toy_name </h4>
