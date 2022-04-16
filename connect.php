@@ -1,5 +1,5 @@
 <?php
-                $servername = "localhost";
+                $servername = "3.24.169.26";
                 $username = "root" ;
                 $password = "";
                 $database = "toyshop";
