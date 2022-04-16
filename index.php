@@ -93,7 +93,7 @@
 
             <?PHP 
                 include('connect.php');
-                $sql = "SELECT * FROM clothing ORDER BY RAND ( ) LIMIT 4";
+                $sql = "SELECT * FROM toy ORDER BY RAND ( ) LIMIT 4";
                 $result = mysqli_query($connect, $sql);
 
                 //tìm và trả về kết quả dưới dạng 1 mảng
@@ -101,20 +101,20 @@
 
                 while($row =mysqli_fetch_array($result)){
                     // lấy dữ liệu từ các dòng truy vấn được trong CSDL ra
-                    $clothing_id = $row['clothing_id'];
-                    $clothing_name = $row['clothing_name'];
-                    $clothing_price =$row['clothing_price'];
-                    $clothing_image =$row['clothing_image'];
-                    $clothing_description = $row['clothing_description'];
+                     $toy_id = $row['toy_id'];
+                    $toy_name = $row['toy_name'];
+                    $toy_price =$row['toy_price'];
+                    $toy_image =$row['toy_image'];
+                    $toy_description = $row['toy_description'];
 
                     echo" <div class='single_toy'>
-                        <a href='detail_product.php?id=$clothing_id'>
-                        <img src='img/$clothing_image' />
-                        <h4> $clothing_name </h4>
-                        <p> Price : $clothing_price $ </p>
+                        <a href='detail_product.php?id=$toy_id'>
+                        <img src='img/$toy_image' />
+                        <h4> $toy_name </h4>
+                        <p> Price : $toy_price $ </p>
                         </a>
                         </div>
-                        ";
+                        ";    
                     }     
                     // remove clothing_des and button cart
             ?>
@@ -123,7 +123,7 @@
         <div class="product sales-up">
             <?PHP 
                     include("connect.php");
-                    $sql = "SELECT * FROM clothing ORDER BY RAND ( ) LIMIT 4";
+                    $sql = "SELECT * FROM toy ORDER BY RAND ( ) LIMIT 4";
                     $result = mysqli_query($connect, $sql);
 
                     //tìm và trả về kết quả dưới dạng 1 mảng
@@ -131,20 +131,20 @@
 
                     while($row =mysqli_fetch_array($result)){
                         // lấy dữ liệu từ các dòng truy vấn được trong CSDL ra
-                        $clothing_id = $row['clothing_id'];
-                    $clothing_name = $row['clothing_name'];
-                    $clothing_price =$row['clothing_price'];
-                    $clothing_image =$row['clothing_image'];
-                    $clothing_description = $row['clothing_description'];
+                        $toy_id = $row['toy_id'];
+                    $toy_name = $row['toy_name'];
+                    $toy_price =$row['toy_price'];
+                    $toy_image =$row['toy_image'];
+                    $toy_description = $row['toy_description'];
 
                     echo" <div class='single_toy'>
-                        <a href='detail_product.php?id=$clothing_id'>
-                        <img src='img/$clothing_image' />
-                        <h4> $clothing_name </h4>
-                        <p> Price : $clothing_price $ </p>
+                        <a href='detail_product.php?id=$toy_id'>
+                        <img src='img/$toy_image' />
+                        <h4> $toy_name </h4>
+                        <p> Price : $toy_price $ </p>
                         </a>
                         </div>
-                        ";
+                        ";    
                         }     
                         // remove clothing_des and button cart
                 ?>
