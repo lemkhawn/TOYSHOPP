@@ -26,7 +26,7 @@ require_once("connect.php");
   <header>
         <div class="head--left">
             <!-- LOGO -->
-            <img src='./img/nk.jpg ' alt="LOGO">
+            <img src='./img/1.png ' alt="LOGO">
         </div>
          
         <div class="head--right">
@@ -61,9 +61,9 @@ require_once("connect.php");
             <div class="head--right down">
                 <nav class="navbar">
                     <a href="./index.php">Home</a>
-                    <a href="All-Product.php">All product</a>
+                    <a href="All-Product.php">Toys</a>
 
-                    <div class="dropdown">
+                    <!-- <div class="dropdown">
                         <button class="dropbtn">Clothing</button>
                         <div class="dropdown-content">
                         <a href="#">Man</a>
@@ -81,7 +81,7 @@ require_once("connect.php");
                         <a href="#">Converse</a>
                         </div>
                       </div>
-                    
+                     -->
                     <a href="">Accessories</a>
                     <a href="">About us</a>
                     <a href="adding.php">Adding</a>

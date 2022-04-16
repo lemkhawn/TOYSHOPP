@@ -11,16 +11,58 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/All-Product.css">
 
-    <title>N'Kien</title>
+    <title>L'KHANH</title>
 </head>
 <style>
-    /* chịu ko hiểu kiẻu j */
+    .adding{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .adding form{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .adding form h2{
+        text-align: center;
+        font-size: 30px;
+        color: #000;
+        margin-bottom: 20px;
+    }
+    .adding form input{
+        width: 100%;
+        height: 40px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .adding form textarea{
+        width: 100%;
+        height: 100px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .adding form input[type="submit"]{
+        width: 100%;
+        height: 40px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background: #000;
+        color: #fff;
+    }
 </style>
 <body>
     <header>
         <div class="head--left">
             <!-- LOGO -->
-            <img src="./img/nk.jpg" alt="LOGO">
+            <img src="./img/1.png" alt="LOGO">
         </div>
          
         <div class="head--right">
@@ -167,14 +209,14 @@
                 <a href="#">Contact</a>
             </p>
 
-            <p class="footer-company-name">N'Kien © 2019</p>
+            <p class="footer-company-name">L'KHANH © 2019</p>
         </div>
 
         <div class="footer-center">
 
             <div>
                 <i class="bi bi-map"></i>
-                <p><span>No 1911, Thuy Hai Village</span> Thai Thuy District, Thai Binh</p>
+                <p><span>No 0308 Ba Vi</span> BA VI, HA NOI</p>
             </div>
 
             <div>
@@ -184,7 +226,7 @@
 
             <div>
                 <i class="bi bi-envelope"></i>
-                <p><a href="kienndbhaf200045@fpt.edu.vn">kienndbhaf200045@fpt.edu.vn</a></p>
+                <p><a href="">khanhnlbhbf200025@fpt.edu.vn</a></p>
             </div>
 
         </div>
@@ -192,7 +234,7 @@
         <div class="footer-right">
 
             <p class="footer-company-about">
-                <span>About N'Kien</span>
+                <span>About L'KHANH</span>
                 We alwas care your oufit, care mix-ways that you put on your body. DYNAMIC | FASHION | TRENDY.
             </p>
 

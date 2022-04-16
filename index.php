@@ -171,14 +171,14 @@
             <a href="#">Contact</a>
         </p>
 
-        <p class="footer-company-name">N'Kien © 2019</p>
+        <p class="footer-company-name">L'KHANH © 2019</p>
     </div>
 
     <div class="footer-center">
 
         <div>
             <i class="bi bi-map"></i>
-            <p><span>No 1911, Thuy Hai Village</span> Thai Thuy District, Thai Binh</p>
+            <p><span>No 0308, Ba Vi</span> BA VI, HA NOI</p>
         </div>
 
         <div>
@@ -188,7 +188,7 @@
 
         <div>
             <i class="bi bi-envelope"></i>
-            <p><a href="kienndbhaf200045@fpt.edu.vn">kienndbhaf200045@fpt.edu.vn</a></p>
+            <p><a href="">khanhnlbhbf200025@fpt.edu.vn</a></p>
         </div>
 
     </div>
@@ -196,7 +196,7 @@
     <div class="footer-right">
 
         <p class="footer-company-about">
-            <span>About N'Kien</span>
+            <span>About L'KHANH</span>
             We alwas care your oufit, care mix-ways that you put on your body.<br>
                 DYNAMIC | FASHION | TRENDY.
         </p>
