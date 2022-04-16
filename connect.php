@@ -1,6 +1,6 @@
 <?php
                 $servername = "3.24.169.26";
-                $username = "ec2-user" ;
+                $username = "root" ;
                 $password = "123@123a";
                 $database = "toyshop";
                         //khai báo biến để kết nói vs csdl 
