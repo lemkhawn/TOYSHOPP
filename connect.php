@@ -2,7 +2,7 @@
                 $servername = "3.24.169.26";
                 $username = "khanhnl" ;
                 $password = "123@123a"; 
-                $database = "toyshop";
+                $database = "toyshopp";
                         //khai báo biến để kết nói vs csdl 
         
                 $connect =  mysqli_connect($servername, $username, $password, $database);
